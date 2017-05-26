@@ -15,7 +15,6 @@ body {
     font-feature-settings : "palt";
 }
 .fa-white{
-    font-size:1vw;
     color:#ffffff;
 }
 
@@ -133,7 +132,7 @@ body {
 
 .contents2 {
     z-index:0;
-    width         : 90vw;
+    width         : 100vw;
     margin-left   :-10px;
     padding-left  : 12vw;
     padding-right : 5vw;
@@ -182,7 +181,7 @@ ol.PubList li{
 
 
 #mem_undergrad {
-    
+    float:left;
     z-index:0;
     width         : 90vw;
     margin-left   :-10px;
@@ -194,10 +193,12 @@ ol.PubList li{
 
 
 .membox {
+    background-color:#f0f0f0;
+
     float:left;
     display:block;
     width:400px;
-    margin:10px 10px 10px 10px;
+    padding:10px 10px 10px 0px;
 }
 
 
