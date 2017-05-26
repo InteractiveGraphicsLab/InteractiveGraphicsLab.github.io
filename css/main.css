@@ -1,0 +1,239 @@
+@charset "Shift_JIS";
+
+body {
+    background-color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.noto100 {
+    font-family: 'Noto Sans JP';
+    font-weight:100;
+}
+.noto300 {
+    font-family: 'Noto Sans JP';
+    font-weight:400;
+    font-feature-settings : "palt";
+}
+.fa-white{
+    font-size:1vw;
+    color:#ffffff;
+}
+
+/*Menu bar*/
+#button{
+    position: fixed;
+    margin-top:-24px;
+    margin-left:-8px;
+    width: 100px;
+    height: 105%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.6);
+    border-style: none;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0.5s cubic-bezier(0.75,0,0.175,1);
+    transition: 0.5s cubic-bezier(0.75,0,0.175,1);   
+}
+
+#button img{
+ position:center;
+ width:40px;
+}
+
+#slide_menu{
+    position: fixed;
+    margin-top:-24px;
+    left: -240px;
+    width: 232px;
+    height: 105%;
+    background-color: rgba(0,0,0,0.6);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 1s cubic-bezier(0.75,0,0.175,1);
+    transition: 1s cubic-bezier(0.75,0,0.175,1);
+    
+}
+
+#menu{
+    z-index: 20;
+    position: fixed;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    background-attachment: fixed;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0.5s cubic-bezier(0.75,0,0.175,1);
+    transition: 0.5s cubic-bezier(0.75,0,0.175,1);
+}
+#menu:hover {
+    -webkit-transform: translateX(232px);
+    transform: translateX(232px);
+}
+
+#slide_menu img{
+  margin-left:-50px; 
+  width: 240px;
+}
+
+#navi{
+    position: relative;
+}
+
+
+/*Header*/
+#maintop{
+    background-image: url(../image/top.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width : 100vw;
+    height: 80vh;
+    top:0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    color:#ffffff;
+    overflow: hidden;
+    margin-left:-10px;
+    margin-top:-10px;
+    font-family: 'Roboto', sans-serif;
+    z-index:1;
+}
+
+#maintop_text{
+    text-align:left;
+    position:absolute;
+    bottom:25vh;
+    left  :12vw;
+}
+
+#update{
+    z-index:0;
+    background-color: #000000;
+    width: 100vw;
+    margin-left  :-10px;
+    margin-top   :-35px;   
+    padding-top  : 20px;
+    padding-left : 12vw;
+    padding-right: 12vw;
+    color: #cacaca;
+}
+
+.contents1 {
+    z-index:0;
+    width         : 70vw;
+    margin-left   :-10px;
+    padding-left  : 12vw;
+    padding-right : 12vw;
+    color:#464646;
+}
+
+
+.contents2 {
+    z-index:0;
+    width         : 90vw;
+    margin-left   :-10px;
+    padding-left  : 12vw;
+    padding-right : 5vw;
+    color:#464646;
+}
+
+
+#head{
+    background-image   : url(../image/head.png); 
+    background-position: center center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    width       : 100vw ;
+    height      : 30vh  ;
+    overflow    : hidden;
+    margin-left :-10px  ;
+    margin-top  :-10px  ;
+    padding-top : 10vh   ;
+    padding-left: 12vw   ;
+    z-index:1;
+}
+
+#head_text{
+    font-family: 'Roboto', sans-serif;
+    font-size  : 6vw;
+    color      : #ffffff;
+    position   : absolute;
+}
+
+
+.PubList {
+    color:#464646;
+    font-family: 'Noto Sans JP';
+    font-weight:400;
+    font-feature-settings : "palt";
+}
+ol.PubList{
+    margin-bottom: 50px;
+}
+
+ol.PubList li{
+    text-align    : justify;
+    margin-left   :-40px;
+    padding-bottom: 10px;
+}
+
+
+#mem_undergrad {
+    
+    z-index:0;
+    width         : 90vw;
+    margin-left   :-10px;
+    padding-left  : 12vw;
+    padding-right : 5vw;
+    color:#464646;
+
+}
+
+
+.membox {
+    float:left;
+    display:block;
+    width:400px;
+    margin:10px 10px 10px 10px;
+}
+
+
+.mbtable td:nth-child(1)
+{
+    width :150px;
+}
+
+.mbtable td:nth-child(2)
+{
+    width:230px;
+    text-align:left;
+    padding-right:10px;
+}
+
+
+.mbimg{
+    width:150px;
+}
+
+
+.FundTable
+{
+    padding: 0.5em 0 0 3em;
+}
+
+.FundTable td:nth-child(1)
+{
+    width      :150pt;
+    text-align :left;
+    padding: 0.3em 0em 0em 0em;
+}
+
+.FundTable td:nth-child(2)
+{
+    text-align:left;
+    padding: 0.3em 0em 0em 0em;
+}
+
