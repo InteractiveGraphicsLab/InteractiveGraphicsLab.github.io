@@ -6,15 +6,16 @@
 
 body {
     background-color: #ffffff;
-    font-family:"NotoSansJP","NotoSansJapanese","ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    /*font-family:"NotoSansJP","NotoSansJapanese","ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;*/
+    font-family:"NotoSansJP","NotoSansJapanese",sans-serif;
 }
 
 .noto100 {
-    font-family:"NotoSansJP","NotoSansJapanese","ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP","NotoSansJapanese",sans-serif;
     font-weight:100;
 }
 .noto300 {
-    font-family:"NotoSansJP","NotoSansJapanese","ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP","NotoSansJapanese",sans-serif;
     font-weight:400;
     font-feature-settings : "palt";
 }
@@ -125,8 +126,10 @@ body {
 }
 
 .contents1 {
+    float:left;
     z-index:0;
     width         : 70vw;
+    margin-top    : 10vh;
     margin-left   :-10px;
     padding-left  : 12vw;
     padding-right : 12vw;
@@ -142,6 +145,48 @@ body {
     padding-right : 5vw;
     color:#464646;
 }
+
+
+
+
+
+.research_topic_box{
+    background-color:#f0f0f0;
+
+    float:left;
+    display:block;
+    width:400px;
+    padding:10px 10px 10px 20px;
+    margin:10px 0px 10px 0px;
+}
+
+
+.rttable td:nth-child(1)
+{
+    width :120px;
+}
+
+.rttable td:nth-child(2)
+{
+    width:250px;
+    text-align:left;
+    padding-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #head{
@@ -167,22 +212,11 @@ body {
 }
 
 
-.PubList {
-    color:#464646;
-    font-family: 'NotoSansJP';
-    font-weight:400;
-    font-feature-settings : "palt";
-}
-ol.PubList{
-    margin-bottom: 50px;
-}
 
-ol.PubList li{
-    text-align    : justify;
-    margin-left   :-40px;
-    padding-bottom: 10px;
-}
 
+
+
+/*member page*/
 
 #mem_undergrad {
     float:left;
@@ -202,7 +236,8 @@ ol.PubList li{
     float:left;
     display:block;
     width:400px;
-    padding:10px 10px 10px 0px;
+    margin:10px 10px 10px 10px;
+    padding:10px 10px 10px 10px;
 }
 
 
@@ -222,6 +257,28 @@ ol.PubList li{
 .mbimg{
     width:150px;
 }
+
+
+
+
+
+/*publication page*/
+.PubList {
+    color:#464646;
+    font-family: 'NotoSansJP';
+    font-weight:400;
+    font-feature-settings : "palt";
+}
+ol.PubList{
+    margin-bottom: 50px;
+}
+
+ol.PubList li{
+    text-align    : justify;
+    margin-left   :-40px;
+    padding-bottom: 10px;
+}
+
 
 
 .FundTable
