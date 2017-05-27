@@ -10,11 +10,11 @@ body {
 }
 
 .noto100 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:100;
 }
 .noto300 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight:400;
     font-feature-settings : "palt";
 }
