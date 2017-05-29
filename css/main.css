@@ -81,6 +81,11 @@ body {
   width: 14vw;
 }
 
+.itm_hover:hover{
+   background-color : rgba(164, 151, 151,0.2);
+}
+
+
 
 /*Header*/
 #maintop{
