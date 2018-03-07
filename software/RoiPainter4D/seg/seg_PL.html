@@ -1,16 +1,17 @@
 ﻿
-<!-- saved from url=(0055)http://takashiijiri.com/SoftRoiPainter/segm/seg_RG.html -->
+<!-- saved from url=(0054)http://takashiijiri.com/SoftRoiPainter/segm/index.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Paint and Lasso</title>
-
-<link rel="stylesheet" type="text/css" media="screen" href="./Region Growing_files/roipainter.css">
-
-<style type="text/css" media="screen">
-<!--
--->
-</style>
-</head>
+    <title>RoiPainter4D Segmentation</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/roipainter.css">
+    
+    <style type="text/css" media="screen">
+    <!--
+    -->
+    </style>
+    </head>
+    
 
 
 
@@ -42,9 +43,11 @@
     <a href="index.html"><font class="vtmode">Segmentation Top</font></a><br>
     <ul>
         <li><a href="seg_PL.html"><font class="vtmode">1) Seg Paint and Lasso</font></a> ← this page</li>
-        <li><a href="seg_TRG.html"><font class="vtmode">2) Seg Thresholding and Region Growing</font></a></li>
+        <li><a href="seg_TRG.html"><font class="vtmode">2) Seg Threshold and Region grow</font></a></li>
         <li><!--<a href="seg_RT.html">--><font class="vtmode">3) Seg Rigid Tracking(ICP)</font><!--</a>--><font color="898989">(coming soon...)</font></li>
-        <li><!--<a href="seg_CP.html">--><font class="vtmode">4) Seg Closest Pixel(Sprout Project)</font><!--</a>--><font color="898989">(coming soon...)</font></li>
+        <li><a href="seg_LRG.html"><font class="vtmode">4) Seg Local Region grow</font></a></li>
+        <li><!--<a href="seg_CP.html">--><font class="vtmode">5) Seg Closest Pixel(Sprout Project)</font><!--</a>--><font color="898989">(coming soon...)</font></li>
+        <li><a href="seg_PC.html"><font class="vtmode">6) Parallel Contors</font></a></li>
     </ul>
 </div>
 
@@ -87,8 +90,7 @@
     <tbody>
         <tr>
             <td>
-
-                <iframe title="votracerbasic1" class="youtube-player" type="text/html" width="640" height="480" src="./Region Growing_files/saved_resource.html" frameborder="0"></iframe>
+                <video controls width="640" height="368"><source src="./video/paintlasso.mp4"></video>
             </td>
             <td style="padding:1em;">
                 <font class="vtmanu">Shift+L-drag</font><br> 領域の指定<br>
@@ -115,7 +117,7 @@
         <tbody>
             <tr>
                 <td>
-                    <img src="../image/dialog_PL.png" width="280">
+                    <img src="./image/dialog_PL.png" width="280">
                 </td>
                 <td style="padding:1em; line-height: 1.4em;">
                     <font class="vtmanu">d1. Paintツール</font> Paintツールに切り替え<br>
