@@ -85,7 +85,7 @@
         <tbody>
             <tr>
                 <td>
-                    <!--<video><source src="../image/seg_PC.mp4"></video>-->
+                    <!--<video><source src="./image/seg_PC.mp4"></video>-->
                 </td>
                 <td style="padding:1em;">
                     <font class="vtmanu">Step1:Shift + L-click</font><br>  中央点の配置<br>
@@ -124,13 +124,13 @@
         <tbody>
             <tr>
                 <td>　
-                    <img src="../image/dialog_PC.png" width="280">
+                    <img src="./image/dialog_PC_1.png" width="380">
                 </td>
                 <td style="padding:1em; line-height: 1.4em;">
     
     <font class="vtmanu">d1. ROI size slider</font> キャンバスサイズの設定<br>
     <font class="vtmanu">d2. Slice number slinder </font> キャンバス枚数の設定<br>
-    <font class="vtmanu">d3. Go next step</font> Step2へ移る(Step1には戻れない)<br>
+    <font class="vtmanu">d3. Go next step</font> Step2へ移る（Step1のキャンバスサイズ，枚数の変更の操作はStep2ではできない）<br>
     <br>
                 </td>
             </tr>
@@ -144,7 +144,7 @@
         <tbody>
             <tr>
                 <td>　
-                    <img src="../image/dialog_PC.png" width="280">
+                    <img src="./image/dialog_PC_2.png" width="380">
                 </td>
                 <td style="padding:1em; line-height: 1.4em;">
     
@@ -156,18 +156,18 @@
     <font class="vtmanu">d6. Copy contor from next</font> 1つ後のフレームのキャンバスから輪郭線をコピー&ペースト<br>
     <font class="vtmanu">d7. Interpolation in the time direction</font> 現在表示しているキャンバスと各フレームで同じ層のキャンバスだけで輪郭線補間(制御点付与)<br>
     <font class="vtmanu">d8. Interpolation in the space direction</font> 現在のフレームのみで輪郭線補間(制御点付与)<br>
-    <font class="vtmanu">d9. </font> 全キャンバスフレームの表示/非表示<br>
+    <font class="vtmanu">d9. </font> 表示/非表示に関するチェックボックス群<br>
+
+<!--    全キャンバスフレームの表示/非表示<br>
     <font class="vtmanu">d10. Mesh</font> 境界面の表示/非表示<br>
     <font class="vtmanu">d11. All contors</font> 全輪郭線の表示/非表示<br>
-    <font class="vtmanu">d12. Edges</font> 三角形メッシュのエッジ表示/非表示<br>
-    <font class="vtmanu">d13. Add CPs</font> 制御点を追加するモード<br>
-    <font class="vtmanu">d14. Translation</font> アクティブなキャンバス上の全制御点を平行移動するモード<br>
-    <font class="vtmanu">d15. Rotation</font> アクティブなキャンバス上の全制御点を回転させるモード<br>
-    <font class="vtmanu">d16. Arc Length</font> 三角形メッシュの周囲長の総和が最小となるような三角形メッシュ群を生成<br>
-    <font class="vtmanu">d17. Area</font> 三角形メッシュの面積の総和が最小となるような三角形メッシュ群を生成<br>
-    <font class="vtmanu">d18. Mesh creation</font> 面の生成<br>
-    <font class="vtmanu">d19. Finish And Store</font> 作業終了，領域をマスクとして保存(Vis Maskに移動)<br>
-    <font class="vtmanu">d20. Cancel</font> 作業中止，領域を破棄する(作業内容が消えるため要注意)<br>
+    <font class="vtmanu">d12. Edges</font> 三角形メッシュのエッジ表示/非表示<br> -->
+    
+    <font class="vtmanu">d10. Contors edit Mode</font> 輪郭線の平行移動（Trans），回転（Rot）をするモード（Add CP：制御点を追加するモード）<br>
+    <font class="vtmanu">d11. Mesh creation</font> 面の生成（ArcLen：三角形メッシュの周囲長の総和が最小，Area：三角形メッシュの面積の総和が最小）<br>
+
+    <font class="vtmanu">d12. Finish And Store</font> 作業終了，領域をマスクとして保存(Vis Maskに移動)<br>
+    <font class="vtmanu">d13. Cancel</font> 作業中止，領域を破棄する(作業内容が消えるため要注意)<br>
     <br>
                 </td>
             </tr>
