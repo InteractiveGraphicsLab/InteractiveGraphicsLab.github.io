@@ -42,8 +42,8 @@
         <ul>
             <li><a href="seg_PL.html"><font class="vtmode">1) Seg Paint and Lasso</font></a></li>
             <li><a href="seg_TRG.html"><font class="vtmode">2) Seg Threshold and Region grow</font></a></li>
-            <li><a href="seg_RT.html"><font class="vtmode">3) Seg Rigid Tracking(ICP)</font></a></li>
-            <li><a href="seg_LRG.html"><font class="vtmode">4) Seg Local Region grow</font></a> ← this page</li>
+            <li><a href="seg_RT.html"><font class="vtmode">3) Seg Rigid Tracking(ICP)</font></a> ← this page</li>
+            <li><a href="seg_LRG.html"><font class="vtmode">4) Seg Local Region grow</font></a></li>
             <li><!--<a href="seg_CP.html">--><font class="vtmode">5) Seg Closest Pixel(Sprout Project)</font><!--</a>--><font color="898989">(coming soon...)</font></li>
             <li><a href="seg_PC.html"><font class="vtmode">6) Parallel Contors</font></a></li>
         </ul>
@@ -55,7 +55,7 @@
     <h2>3) Local Region Growing</h2>
     
     <div = class="ProjAbst">
-        このツールは，4次元X線CT画像に対して領域拡張(Region Growing)を行い，前景領域を抽出し，詳細な4次元形状モデルの作成を行うためのものです．
+        このツールは，4次元X線CT画像に対して剛体追跡を行い，領域分割を行うツールです．
     </div>
     
     
@@ -64,9 +64,10 @@
     <h2>Workflow</h2>
     
     <ol style="line-height:1.5em; padding-left:4.0em;">
-        <li>ツールの起動 : Click "Menu &gt; ModeSwitch &gt; Segmentation Local Region Grow" </li>
-        <li>シードの配置 : シードを複数配置し，その影響範囲と閾値を設定する．</li>
-        <li>領域分割 : Region Growingにより局所的な領域分割を行う．</li>
+        <li>ツールの起動 : Click "Menu &gt; ModeSwitch &gt; Segmentation Rigid Tracking(ICP)" </li>
+        <li>ソースサーフェスのロード : ソースとなるサーフェスをロードする．</li>
+        <li>ISOサーフェスの作成 : ソースメッシュを含むようなISOサーフェスを作成．</li>
+        <li>トラッキング : "Run Tracking with ICP"をクリック．</li>        
         <li>終了 : ダイアログ右下のFinish And Storeを押す．</li>
     </ol>
     
@@ -84,14 +85,11 @@
         <tbody>
             <tr>
                 <td>
-                    <video controls width="640" height="368"><source src="./video/localRG.mp4"></video>                    
+                    <video controls width="640" height="368"><source src="./video/seg_RT.mp4"></video>                    
                 </td>
                 <td style="padding:1em;">
-                    <font class="vtmanu">L-double click</font><br> シード配置<br>
+                    <font class="vtmanu">Shift + L-click</font><br> ソースサーフェスの移動と回転<br>
                     <br>
-                    <font class="vtmanu">M-wheel(Active)</font><br> シード半径変更<br>
-                    <br>
-                    <font class="vtmanu">M-double click</font><br> シード削除<br>
                     <br>
                     <font class="vtmanu">L-drag </font><br> 移動<br>
                     <br>
@@ -115,26 +113,23 @@
         <tbody>
             <tr>
                 <td>　
-                    <img src="./image/dialog_LRG.png" width="400">
+                    <img src="./image/dialog_RT.png" width="400">
                 </td>
                 <td style="padding:1em; line-height: 1.4em;">
     
-    <font class="vtmanu">d1. Seed list</font> 配置したシードの情報<br>
-    <font class="vtmanu">d2. Threshold slider</font> シードの閾値設定（下限/上限）<br>
-    <font class="vtmanu">d3. Radius slider</font> シードの半径設定<br>
-    <font class="vtmanu">d4. Run Local Region Grow</font> 領域計算を行う<br>
-    <font class="vtmanu">d5. Seed Sort</font> シードのソート（実装予定）<br>
-    <font class="vtmanu">d6. Save / Load Seeds</font> 配置したシード情報の保存/呼び出し<br>
-    <font class="vtmanu">d7. Cancel</font> 作業中止（作業内容が消えるため要注意）<br>
-    <font class="vtmanu">d8. Finish And Store</font> 作業終了，Vizualization maskへ移動<br>
+    <font class="vtmanu">d1. load source surface</font> ソースサーフェスのロード<br>
+    <font class="vtmanu">d2. Threshold slider</font> ソースサーフェスの移動<br>
+    <font class="vtmanu">d3. Radius slider</font> ソースサーフェスの回転<br>
+    <font class="vtmanu">d4. Run Local Region Grow</font> CT値を設定<br>
+    <font class="vtmanu">d5. Seed Sort</font> 現在のフレームのみにISOサーフェスを生成(テスト)<br>
+    <font class="vtmanu">d6. Save / Load Seeds</font> 全てのフレームにISOサーフェスを生成<br>
+    <font class="vtmanu">d7. Save / Load Seeds</font> トラッキングを開始<br>
+    <font class="vtmanu">d8. Save / Load Seeds</font> 平行移動のマトリックスを表示<br>
+    <font class="vtmanu">d9. Finish And Store</font> 作業終了，Vizualization maskへ移動<br>
+    <font class="vtmanu">d10. Cancel</font> 作業中止（作業内容が消えるため要注意）<br>
     
     <br><br>
-    RegionGrowingでは，シードの隣接画素を探索し，拡張規則を満たす画素を前景領域として抽出する．画像全体に同じ拡張規則が適用される．<br>
-    <br>
-    RoiPainterでは，シードを複数配置し，それぞれに異なる閾値と影響範囲を指定することで局所的に領域を抽出することが可能です．また，前景領域を抽出する「ポジティブシード」に加え，背景領域を抽出する「ネガティブシード」を配置することで，領域の誤抽出を修正することができます．さらに，影響範囲を指定する形状として，球と円筒の2種類を提供する．<br>
-    <br>
-    <b><font color="#0000ff">d2</font></b>では，RegionGrowingで抽出する輝度値の範囲を設定します．<br>
-                </td>
+        </td>
             </tr>
         </tbody>
     </table>
