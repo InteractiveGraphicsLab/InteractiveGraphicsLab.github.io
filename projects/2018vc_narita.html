@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <title>project</title>
+
+</head>
+
+<body>
+    <div id="menu">
+        <nav id="slide_menu">
+            <ul>
+                <a href="../index.html"><img src="../image/Home.png" class="itm_hover" border="0"></a>
+                <a href="../vision.html"><img src="../image/Vision.png" class="itm_hover" border="0"></a>
+                <a href="../publication.html"><img src="../image/Publication.png" class="itm_hover" border="0"></a>
+                <a href="../member.html"><img src="../image/Member.png" class="itm_hover" border="0"></a>
+                <a href="../index.html#access"><img src="../image/Access.png" class="itm_hover" border="0"></a>
+                <a href="../software.html"><img src="../image/Software.png" class="itm_hover" border="0"></a>
+                <a href="http://takashiijiri.com/classes/index.html" target="blank"><img src="../image/Classes.png" class="itm_hover" border="0"></a>
+            </ul>
+        </nav>
+
+        <!--menu_bar-->
+        <button id="menu_bar"><i class="fa fa-bars fa-white fa-3x" aria-hidden="true"></i></button>
+    </div>
+
+
+    <div id="head">
+        <div id="head_text">
+            Project
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="contents_whitebg">
+
+      <div class="contents_whitebg_text_600">
+<h3>最小切断面を利用した2値画像の意味的領域分割</h3>
+<h4>成田 智史, 井尻 敬</h4>
+<h4>芝浦工業大学</h4>
+      </div>
+
+      <div class="contents_whitebg_text_600">
+        <img src="./2018vc_narita.png" width="100%">
+      </div>
+
+      <div class="contents_whitebg_text_600">
+<b>概要. </b> 本研究では，昆虫や植物などといった自然物の X 線 CT 画像に対する意味的領域分割アルゴリズムを
+提案する．提案法は，昆虫や植物はくびれを境に意味の異なる領域に分かれることが多いという知見に基づく．提案
+法は，二値化した X 線 CT 画像（ボクセルデータ）を入力とし，その前景領域を 2 分割する面積が局所最小な切断
+面（くびれ）の検出を繰り返すことで, 意味的領域分割を実現する．このくびれの検出は，Split 処理，Regrow 処
+理，MinCut 処理という 3 ステップから構成され，Split 処理と Regrow 処理はモルフォロジー演算により実現され，
+MinCut 処理はグラフカット法により実現される．提案法の精度検証のため，二つの円を組み合わせた人工画像に対
+して提案法を適用し，提案法による分割結果と正しい分割結果との比較を行った．結果，誤差画素率 2%未満という
+高い精度でくびれを検出できることを確認した．また，提案法の有用性を検証するため，昆虫や花のボクセルデータ
+に提案法を適用し，花序内の小花，多肉植物の茎，昆虫の脚などという意味的に異なる領域を分割できることを確認
+した．
+      </div>
+
+      <div class="contents_whitebg_text_600">
+        <h2>Materials</h2>
+        <a href="https://ci.nii.ac.jp/naid/40021836168/">link</a> <br>
+        <a href="2018vc_narita_preprint.pdf">author's preprint</a> <br>
+
+<pre>
+@article{narita2018,
+  author="成田, 智史 and 井尻, 敬",
+  title="最小切断面を利用した2値画像の意味的領域分割 (VC2018特集)",
+  journal="画像電子学会誌 The journal of the Institute of Image Electronics Engineers of Japan : visual computing, devices & communications",
+  ISSN="2186-716X",
+  publisher="画像電子学会",
+  year="2018",
+  month="",
+  volume="47",
+  number="4",
+  pages="433-439",
+}
+</pre>
+      </div>
+
+
+    </div>
+
+
+    <div class="contents_whitebg">
+        <div class="contents_whitebg_text">
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+</body>
+</html>

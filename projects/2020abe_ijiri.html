@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <title>project</title>
+
+</head>
+
+
+
+<body>
+    <div id="menu">
+        <nav id="slide_menu">
+            <ul>
+                <a href="../index.html"><img src="../image/Home.png" class="itm_hover" border="0"></a>
+                <a href="../vision.html"><img src="../image/Vision.png" class="itm_hover" border="0"></a>
+                <a href="../publication.html"><img src="../image/Publication.png" class="itm_hover" border="0"></a>
+                <a href="../member.html"><img src="../image/Member.png" class="itm_hover" border="0"></a>
+                <a href="../index.html#access"><img src="../image/Access.png" class="itm_hover" border="0"></a>
+                <a href="../software.html"><img src="../image/Software.png" class="itm_hover" border="0"></a>
+                <a href="http://takashiijiri.com/classes/index.html" target="blank"><img src="../image/Classes.png" class="itm_hover" border="0"></a>
+            </ul>
+        </nav>
+
+        <!--menu_bar-->
+        <button id="menu_bar"><i class="fa fa-bars fa-white fa-3x" aria-hidden="true"></i></button>
+    </div>
+
+
+    <div id="head">
+        <div id="head_text">
+            Project
+        </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="contents_whitebg">
+      <div class="contents_whitebg_text_600">
+        <h3>Spatially Controllable Region Growing for Segmenting Heart Chambers</h3>
+        <h4>Takashi Ijiri 1&2, Shogo Tsuruoka 3, Hiryu Kamoshita 3, Akira Hirabayashi 3, Shin Inada 2&4, Isao Shiraishi 2, Ken-ichi Kurosaki 2, Kazuo Nakazawa 2&4</h4>
+        <h4>1. Shibaura Institute of Technology,  2. National Cerebral Cardiovascular Center,  3. Ritsumeikan University,  4.  Morinomiya University of Medical Sciences.</h4>
+      </div>
+
+      <div class="contents_whitebg_text_600">
+        <b>Abstract. </b>
+        Segmentation of computed tomography (CT) images has provided promising methods of
+        constructing precise 3-dimensional heart models. However, the process is labor
+        intensive, because heart regions such as cardiac chambers and blood vessels
+        have similar intensities and exist within a small space. In this paper, we
+        present a tool to efficiently segment cardiac chambers and blood vessels.
+        We extend traditional region growing to be spatially controllable. A user
+        places multiple seeds, each having a bounding area and a threshold, and our tool
+        “grows” regions around each seed independently within its bounding area.
+        To efficiently specify the bounding area, we propose two types of seeds
+        (i.e., sphere and cylinder). We also provide a negative seed that generates
+        fixed background to avoid over-extraction errors. We compared our tool with
+        a traditional scissor tool and confirmed that ours significantly reduced the
+        time required for a segmentation task. We also present segmentation results
+        of CT images of hearts having congenital diseases to illustrate the feasibility
+        of our tool.
+      </div>
+
+      <div class="contents_whitebg_text_600">
+        <h2>Materials</h2>
+          <a href="https://abe-journal.org/issues/2020/09/08/576">paper </a><br>
+        <pre>
+@article{ijiri2020abe,
+  title={Spatially Controllable Region Growing for Segmenting Heart Chambers},
+  author={Takashi Ijiri and Shogo Tsuruoka and Hiryu Kamoshita and Akira Hirabayashi and Shin Inada and Isao Shiraishi and Ken-ichi Kurosaki and Kazuo Nakazawa},
+  journal={Advanced Biomedical Engineering},
+  volume={9},
+  number={ },
+  pages={172-180},
+  year={2020},
+  doi={10.14326/abe.9.172}
+}
+        </pre>
+        <img src="./2020abe_ijiri.png" width="100%">
+      </div>
+  </div>
+</body>
+</html>
