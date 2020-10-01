@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 
     <title>project</title>
@@ -46,36 +46,38 @@
 
     <div class="contents_whitebg">
       <div class="contents_whitebg_text">
-        <h2>Focus stacking by multi-viewpoint focus bracketing</h1>
-        <h3>Yucheng Qiu*, Daisuke Inagaki*, Kenji Kohiyama**, Hiroya Tanaka**, Takashi Ijiri*</h2>
-        <h3>*Shibaura Institute of Technology, **Keio University</h2>
+        <h3>Focus stacking by multi-viewpoint focus bracketing</h3>
+        <h4>Yucheng Qiu*, Daisuke Inagaki*, Kenji Kohiyama**, Hiroya Tanaka**, Takashi Ijiri*</h4>
+        <h4>*Shibaura Institute of Technology, **Keio University</h4>
+      </div>
+      <div class="contents_whitebg_text_600">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/yFDYYKutQ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <div class="contents_whitebg_text">
-      <img src="./2019sa_qiu.png" width="100%">
-    </div>
-
-      <div class="contents_whitebg_text">
+      <div class="contents_whitebg_text_600">
         <b>Abstract. </b>
         We present an approach to obtain high-quality focus-stacking im-ages. The key idea is to integrate the multi-view structure-from-motion (SfM) algorithm with the focus-stacking process; we carry out focus-bracketing shooting at multiple viewpoints, generate depth maps for all viewpoints by using the SfM algorithm, and compute focus stacking using the depth maps and local sharpness. By using the depth-maps, we successfully achieve focus-stacking results with less artifacts around object boundaries and without halo-artifacts, which was difficult to avoid by using the previous harvest pixel and pyramid approaches. To illustrate the feasibility of our approach, we performed focus stacking of small objects such as insects and flowers.
       </div>
-      <div class="contents_whitebg_text">
-        <div class="sketchfab-embed-wrapper">
-          <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/afde8f30093349ba8df50102bb9915b1/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>     
-        </div>
+
+
+      <div class="contents_whitebg_text_600">
+        <h2>Materials</h2>
+        <a href="https://dl.acm.org/doi/fullHtml/10.1145/3355056.3364592"> SIGGRAPH ASIA 2019 poster </a> <br>
+      <pre>
+@InProceedings{qiu2019focus,
+  title={Focus stacking by multi-viewpoint focus bracketing},
+  author={Qiu, Yucheng and Inagaki, Daisuke and Kohiyama, Kenji and Tanaka, Hiroya and Ijiri, Takashi},
+  booktitle={SIGGRAPH Asia 2019 Posters},
+  pages={1--2},
+  year={2019}
+}
+      </pre>
+
+      <div class="sketchfab-embed-wrapper">
+        <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/afde8f30093349ba8df50102bb9915b1/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </div>
+      <img src="./2019sa_qiu.png" width="100%">
     </div>
-
-    <div class="contents_whitebg">
-        <div class="contents_whitebg_text">
-            <br>
-            <br>
-        </div>
-    </div>
-
-
-
-
+  </div>
 </body>
 </html>

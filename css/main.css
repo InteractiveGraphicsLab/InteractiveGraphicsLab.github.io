@@ -6,22 +6,23 @@
 /*
     bar width = 5vw
     bar button width = 15vw (translate 14vw)
-    “WŠJ : 20 vw
+    ï¿½Wï¿½Jï¿½ï¿½ : 20 vw
 */
 
 body {
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #ffffff;
-    font-family:"NotoSansJP","ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP","ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
+    max-width: 1000px;
 }
 
 .noto100 {
-    font-family:"NotoSansJP""ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP""ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
     font-weight:100;
 }
 .noto300 {
-    font-family:"NotoSansJP""ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP""ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
     font-weight:400;
     font-feature-settings : "palt";
 }
@@ -41,7 +42,7 @@ body {
     -webkit-transform : translateX(0);
     transform         : translateX(0);
     -webkit-transition: 0.5s cubic-bezier(0.75,0,0.175,1);
-    transition        : 0.5s cubic-bezier(0.75,0,0.175,1);   
+    transition        : 0.5s cubic-bezier(0.75,0,0.175,1);
 }
 
 
@@ -70,14 +71,14 @@ body {
     transform: translateX(0);
     -webkit-transition: 1s cubic-bezier(0.75,0,0.175,1);
     transition: 1s cubic-bezier(0.75,0,0.175,1);
-    
+
 }
 #menu:hover {
     -webkit-transform: translateX(14vw);
     transform: translateX(14vw);
 }
 #slide_menu img{
-  margin-left:-40px; /*‚È‚º‚©pix•ªƒXƒP[ƒ‹‚É‰‚¶‚Ä‚¸‚ê‚é‚Ì‚Åpx•\‹L*/ 
+  margin-left:-40px; /*ï¿½È‚ï¿½ï¿½ï¿½pixï¿½ï¿½ï¿½Xï¿½Pï¿½[ï¿½ï¿½ï¿½É‰ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½pxï¿½\ï¿½L*/
   width: 14vw;
 }
 
@@ -89,7 +90,7 @@ body {
 
 /*Header*/
 #maintop{
-    background-image   : url(../image/top.png); 
+    background-image   : url(../image/top.png);
     background-position: center center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -119,12 +120,12 @@ body {
     background-color: #000000;
     width: 100vw;
     margin-left  :-10px;
-    margin-top   :-25px;   
+    margin-top   :-25px;
 }
 
 .contents_blackbg_text {
     color: #cacaca;
-    font-family:"NotoSansJP""ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP""ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
     font-weight:500;
     font-feature-settings : "palt";
 
@@ -137,16 +138,25 @@ body {
     z-index:0;
     width        : 100vw;
     margin-left  :-10px;
-    margin-top   :-25px;   
+    margin-top   :-25px;
 }
 
 .contents_whitebg_text {
     color: #464646;
-    font-family:"NotoSansJP""ƒqƒ‰ƒMƒmŠpƒS Pro W3","ƒƒCƒŠƒI",sans-serif;
+    font-family:"NotoSansJP""ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
     font-weight:500;
     font-feature-settings : "palt";
-    padding  : 4vh 10vw 4vh 10vw;
+    padding  : 1vh 10vw 1vh 10vw;
 }
+.contents_whitebg_text_600 {
+    color: #464646;
+    font-family:"NotoSansJP""ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I",sans-serif;
+    font-weight:500;
+    font-feature-settings : "palt";
+    padding  : 1vh 10vw 1vh 10vw;
+    max-width : 600pt;
+}
+
 
 
 
@@ -192,7 +202,7 @@ body {
 
 
 #head{
-    background-image   : url(../image/head.png); 
+    background-image   : url(../image/head.png);
     background-position: center center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -201,6 +211,7 @@ body {
     overflow    : hidden;
     margin-left :-10px  ;
     margin-top  :-10px  ;
+    max-width: 1000px;
     z-index:1;
 }
 
@@ -281,4 +292,3 @@ ol.PubList li{
     text-align:left;
     padding: 0.3em 0em 0em 0em;
 }
-
