@@ -36,48 +36,91 @@
 
   <div id="head">
     <div id="head_text">
-      Projects
+      Butterfly/Moth Models
     </div>
   </div>
 
   <br><br>
 
+<div class="contents_whitebg">
+  <div class="contents_whitebg_text">
+    <h3>Buttefly and Moth Models</h3>
+    <h4>小檜山 賢二(慶応義塾大学)，後藤 竜真，井尻 敬 (芝浦工業大学)</h4>
+  </div>
+  <div class="contents_whitebg_text_600">
+  こちらは，蝶と蛾の標本を3次元モデリングしたものです．<br>
 
-  <div class="contents_whitebg">
-    <div class="contents_whitebg_text">
-      <h3>Buttefly and Moth Models</h3>
-      <h4>小檜山 賢二(慶応義塾大学)，後藤 竜真，井尻 敬 (芝浦工業大学)</h4>
-    </div>
-
-
-    <div class="contents_whitebg_text_600">
-        こちらは，蝶と蛾の標本を3次元モデリングしたものです．<br><br>
-
-        本モデルは，昆虫標本の翅に着目した手法により作成されています．
-        深度合成画像から取得した点群データを活用し，標本の翅領域に対応するテンプレートメッシュを作成した後，点群データへフィッティングを行います．
-        この手法を用いることで，フォトグラメトリでは形状復元が困難な薄い翅の構造について，より正確なモデリングが可能です．<br><br>
-
-        また，本手法では翅1枚ごとに正確なモデリングを実施するため前翅と後翅に隙間が必要です．
-        そこで，標本撮影の前処理として蝶(蛾)標本の再展翅を以下の方法で行っています．
-    </div>
-
-
-    <div class="contents_whitebg_text_600">
-      <img src="./2024_butterflymodels.png" width="100%">
-    </div>
-
-
+  本モデルは，標本の翅の形状に着目した手法により構築されています。<br>
+  具体的な手順は下記のとおりです。<br>
+  (1)多視点深度合成写真を撮影し、フォトグラメトリソフトによりカメラ位置と3D点群を構築する<br>
+  (2)点群を胴体領域と翅領域に手作業で分割する<br>
+  (3)翅領域の点群に、平面的なテンプレートメッシュをフィットさせメッシュを構築<br>
+  (4)胴体領域の点群に、Ball pivotting法を適用しメッシュを構築<br>
+  (5)深度合成写真を逆投影することでテクスチャを作成する<br>
+  <a href="../papers/2024_VC24_Goto.pdf">モデリング手法の詳細はこちら</a><br>
+  <br>
+  また，本手法では翅1枚ごとの正確なモデリングのため、前翅と後翅に隙間をつくるように
+  再展翅を実施しています（下図参照）．
+    <img src="./2024_butterflymodels.png" width="100%">
+  </div>
+</div>
 
 <div class="contents_whitebg">
-<div class="contents_whitebg_text">
+  <div class="contents_whitebg_text">
   <h4>3D Models</h4>
 
+
 <div class="research_topic_box">
-  <div class="sketchfab-embed-wrapper"> <iframe title="Butterfly 1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="--------------------------------"> </iframe> </div>
+  <div class="sketchfab-embed-wrapper"> <iframe title="Yellow Coster (Acraea issoria) ヘリグロホソチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/0e9a8757aa6b4062a5da88dbbe16c976/embed"> </iframe> </div>
 </div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Spotless Grass Yellow ツマグロキチョウ 1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/fa6290b0a4de44c5a5dea907bbb6c934/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Spotless Grass Yellow ツマグロキチョウ 2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/451b1f9b1e6f49948bd62cc2ad1475b2/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Japanese Luehdorfia (Luehdorfia japonica) ギフチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/13c03532dc144455ac79f62ac7239d29/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Blue Admiral ルリタテハ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/9026fc56fab64342a3f82ed8dbb04b5b/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Burney's longwing (Heliconius burneyi) ブルネイドクチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/ba40977ed1334b20aaa9e59c1ca31a35/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Heliconius xanthocles クサントクレスドクチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/7a323e20e65f4924948d21e3d67cba1b/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Heliconius doris ドリスドクチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/0d63e095af6d40f08b275028a0dbf38d/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="The Lesser Albatross(Appias paulina) ナミエシロチョウ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/c564ac5ea22546a9a34b91acc2350809/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Catocala dula オニベニシタバ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/42333a1c21274c05a252354784eb51f7/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Catocala patala キシタバ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/e0bfd33d7ab743f6bc35597c1f797540/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+<div class="sketchfab-embed-wrapper"> <iframe title="Catocala nivea シロシタバ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/e4e06ae3ab7740bbbc3fb6f583bf7324/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Blue underwing (Catocala fraxini) ムラサキシタバ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/1caae0a6ca5b414eaf420bd0fd9da440/embed"> </iframe> </div>
+</div>
+<div class="research_topic_box">
+  <div class="sketchfab-embed-wrapper"> <iframe title="Lime Swallowtail (Papilio demoleus) オナシアゲハ" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="400" height="300" src="https://sketchfab.com/models/5ff9fbcec48446bfac6ef08eb78114c7/embed"> </iframe> </div>
+</div>
+
+
+　</div>
 
 </div>
 
-  </div>
+
+
+
+
 </body>
 </html>
