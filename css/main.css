@@ -376,6 +376,18 @@ hr {
     white-space : nowrap;
 }
 
+/*figures in project pages*/
+.contents_whitebg_text_600 img {
+    display: block;
+}
+
+.caption {
+    margin-top : 0.3em;
+    font-size  : 0.85rem;
+    line-height: 1.5;
+    color      : #777777;
+}
+
 /*Google map*/
 .contents_whitebg_text iframe[src*="google.com/maps"] {
     width : 100%;

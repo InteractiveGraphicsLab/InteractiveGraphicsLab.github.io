@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400&display=swap">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="../js/menu.js" defer></script>
+
+  <title>Edible Chromatic Caustics</title>
+
+</head>
+
+
+
+<body>
+  <div id="menu">
+    <nav id="slide_menu">
+      <ul>
+        <a href="../index.html"><img src="../image/Home.png" alt="Home" class="itm_hover" border="0"></a>
+        <a href="../vision.html"><img src="../image/Vision.png" alt="Vision" class="itm_hover" border="0"></a>
+        <a href="../publication.html"><img src="../image/Publication.png" alt="Publication" class="itm_hover" border="0"></a>
+        <a href="../member.html"><img src="../image/Member.png" alt="Member" class="itm_hover" border="0"></a>
+        <a href="../index.html#access"><img src="../image/Access.png" alt="Access" class="itm_hover" border="0"></a>
+        <a href="../software.html"><img src="../image/Software.png" alt="Software" class="itm_hover" border="0"></a>
+        <a href="http://takashiijiri.com/classes/index.html" target="blank"><img src="../image/Classes.png" alt="Classes"
+            class="itm_hover" border="0"></a>
+      </ul>
+    </nav>
+
+    <!--menu_bar-->
+    <button id="menu_bar"><i class="fa fa-bars fa-white fa-3x" aria-hidden="true"></i></button>
+  </div>
+
+
+  <div id="head">
+    <div id="head_text">
+      Projects
+    </div>
+  </div>
+
+  <br><br>
+
+
+  <div class="contents_whitebg">
+    <div class="contents_whitebg_text">
+      <h3>Edible Chromatic Caustics: Designing Colored Caustics of Jelly via Differentiable Rendering</h3>
+      <h4>Daiki Inokoshi, Takashi Ijiri
+        <br> Shibaura Institute of Technology
+        <br><br> SIGGRAPH Asia 2025 Posters
+      </h4>
+    </div>
+    <div class="contents_whitebg_text_600">
+      <img src="./2025sa_inokoshi.jpg" width="100%" alt="Jellies with colored caustics">
+    </div>
+    <div class="contents_whitebg_text_600">
+      <b>Abstract. </b>
+      Transparent jellies create caustic patterns on the surface beneath them by refracting light.
+      Prior work designed jelly shapes that generate desired caustic patterns, but did not support colored caustics.
+      This study aims to create jellies with a desired colored caustic pattern.
+      We propose a two-step optimization process using a differentiable renderer (Mitsuba 3):
+      we first optimize the surface shape of a transparent base jelly to control the caustic intensity,
+      and then optimize the geometry and color of colored jelly inclusions embedded in the base jelly to provide color to the caustics.
+      After the optimization, we fabricate a jelly mold comprising an outer cavity and inner cores using a 3D printer, and create the jelly with the mold.
+      The proposed method enables the creation of jellies with various colored caustic patterns, providing novel culinary experiences.
+    </div>
+
+    <div class="contents_whitebg_text_600">
+      <b>概要. </b>
+      透明なゼリーは光を屈折させ，下の面に集光模様（コースティクス）を作ります．
+      先行研究では所望の集光模様を生成するゼリー形状の設計が提案されていましたが，色のついた集光模様には対応していませんでした．
+      本研究では，所望のカラーの集光模様を生成するゼリーの設計手法を提案します．
+      微分可能レンダラ（Mitsuba 3）を用いた2段階の最適化により，まず透明なベースゼリーの表面形状を最適化して集光の強度を制御し，
+      次にベースゼリー内部に埋め込む色付きゼリーの形状と色を最適化して集光模様に色を与えます．
+      最適化結果から，外型と中子からなるゼリー型を3Dプリンタで作成し，その型を使ってゼリーを作ります．
+      提案手法により，様々なカラーの集光模様を持つゼリーを作ることができます．
+    </div>
+
+
+
+    <div class="contents_whitebg_text_600">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/T87yjpIvuUo" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+
+    <div class="contents_whitebg_text_600">
+      <h2>Materials</h2>
+      [<a href="../papers/2025/2025_SA_Inokoshi.pdf">preprint</a>]
+      [<a href="../papers/2025/2025_SA_Inokoshi_pos.pdf">poster</a>]
+      [<a href="https://youtu.be/T87yjpIvuUo">youtube</a>]
+      [<a href="https://doi.org/10.1145/3757374.3771517">ACM DL</a>]
+      <br>
+      Previous work: Edible Caustics (SIGGRAPH 2024 Posters)
+      [<a href="../papers/2024/2024_SGposter_Inokoshi.pdf">preprint</a>]
+
+      <pre>
+      @inproceedings{Inokoshi2025,
+        author = {Inokoshi, Daiki and Ijiri, Takashi},
+        title = {Edible Chromatic Caustics: Designing Colored Caustics of Jelly via Differentiable Rendering},
+        booktitle = {SIGGRAPH Asia 2025 Posters},
+        series = {SA Posters '25},
+        year = {2025},
+        publisher = {Association for Computing Machinery},
+        doi = {10.1145/3757374.3771517}
+      }
+      </pre>
+    </div>
+  </div>
+</body>
+</html>
